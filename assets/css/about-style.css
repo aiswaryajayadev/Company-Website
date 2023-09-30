@@ -1,0 +1,207 @@
+
+  .new {
+      background:  #eaf6f6;
+      
+      width: 100vw;
+      height: 73vw;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -67x;
+      margin-bottom: 56px;
+    }
+  
+    .graylayer {
+      background-color: #eaf6f6;
+      width: 100vw;
+      height: 45vw;
+      position: absolute;
+      top: 26px;
+      bottom: 0px;
+      display: flex;
+    }
+.graylayer2 {
+      background-color: #eaf6f6;
+      
+    }
+
+
+    .images {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  
+    .images img {
+      border-radius: 50%;
+      width: 454px;
+      height: 482px;
+      position: relative;
+      z-index: 2; /* Place the image above other elements */
+    }
+
+    
+    .images2 img {
+      border-radius: 50%;
+      width: 557px;
+      height: 493px;
+      position: relative;
+      z-index: 2;
+      left: 86px;
+      right: 23px;
+      top: 175px;
+    }
+
+    .text {
+      flex: 1;
+      
+      color: rgb(41, 38, 38);
+      position: relative;
+      height: 356px;
+      width: 10px;
+      padding: 3px;
+      z-index: 1; /* Place the text above the gray background */
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 89px;
+      margin-bottom: 10px;
+      left:-29px;
+    }
+    .text2{
+      height: 400px;
+      width: 500px;
+      padding: 20px;
+      color: rgb(41, 38, 38);
+      position: relative;
+      left: -29px;
+      right: 10px;
+      top: 291px;
+      bottom: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 89px;
+    }
+    
+    
+    .text h1 {
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f76b8a;
+    }
+    .text2 h1 {
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f76b8a;
+    }
+    
+    .text p {
+      font-size: 16px;
+      margin-top: 23px;
+      margin-bottom: 27px;
+    }
+    h1{
+      position: relative;
+    }
+    
+    h1::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #66bfbf;
+      transform-origin: bottom left;
+      transform: scaleX(1);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    h1:hover::before {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+    
+    .text2 p {
+      font-size: 16px;
+      margin-top: 23px;
+      margin-bottom: 27px;
+    }
+
+    .button1{
+      display: inline-block;
+      outline: 0;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid #f76b8a;
+      color: #f76b8a;
+      background: 0 0;
+      padding: 8px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+      font-weight: 800;
+      font-size: 16px;
+      height: 42px;
+    }
+    .button2{
+    
+      display: inline-block;
+      outline: 0;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid #f76b8a;
+      color: #f76b8a;
+      background: 0 0;
+      padding: 8px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+      font-weight: 800;
+      font-size: 16px;
+      height: 42px;
+      
+      
+    }
+    .button2:hover {
+      background-color: #66bfbf;
+      color: black;
+    }
+    .button1:hover {
+      background-color: #66bfbf;
+      color: black;
+    }
+    
+  /* --- */
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    }
+    
+  
+    /********** Responsive Design ********/
+    @media (max-width: 900px) {
+      .row {
+        flex-direction: column;
+      }
+    
+      .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+    
+      .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
+    
